@@ -1,0 +1,33 @@
+.box-style{
+    width: 400px;
+    display: inline-block;
+    /* 1er forma de crear una margen */
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    /* 2da forma de crear una margen */
+    margin: 30px;
+    padding: 0 45px;
+    text-align: justify;
+    letter-spacing: .1em;
+    word-spacing: .2em;
+    line-height: 2em;
+}
+.box-1{
+    background-color:cornflowerblue;
+    border: 5px solid rgb(64, 64, 64);
+}
+.box-2{
+    border: 5px dotted red;
+}
+.box-3{
+    border: 5px dashed black;
+}
+.box-4{
+    border: 5px double blue;
+}
+p{
+    font-size: 1.4em;
+    color: black;
+}
