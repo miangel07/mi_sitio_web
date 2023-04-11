@@ -1,0 +1,42 @@
+h1{
+text-align: center;
+}
+ th, td{
+    /* border: 1px solid rgb(24, 24, 24); */
+    padding: 10px 15px;
+
+}
+table{
+    border-collapse: collapse;
+    padding: 10px 15px;
+    font-size: 2.2em;
+  
+   
+    
+}
+.table-box{
+    justify-content: center;
+     display: flex;
+}
+.img-check{
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+.col-style{
+    width: 150px;
+}
+.logo-equis{
+    width: 50px;
+    display: block;
+    margin: auto;  
+}
+.col-fam{
+    background-color: rgb(255, 120, 13);
+    color: beige;
+    font-family: sans-serif;
+    
+}
+.col-arow{
+    background-color: rgb(241, 241, 243);
+}
