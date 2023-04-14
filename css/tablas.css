@@ -1,18 +1,20 @@
-h1{
+ h1{
 text-align: center;
+font-family: sans-serif;
+
 }
- th, td{
-    /* border: 1px solid rgb(24, 24, 24); */
+ th, td, tr{
+    border: 1px solid rgb(24, 24, 24); 
     padding: 10px 15px;
+    
 
 }
 table{
     border-collapse: collapse;
     padding: 10px 15px;
     font-size: 2.2em;
-  
-   
-    
+    border: 1px;
+    border: 1px solid rgb(24, 24, 24); 
 }
 .table-box{
     justify-content: center;
@@ -32,11 +34,26 @@ table{
     margin: auto;  
 }
 .col-fam{
-    background-color: rgb(255, 120, 13);
+    background-color: rgb(81, 141, 230);
     color: beige;
     font-family: sans-serif;
     
 }
 .col-arow{
-    background-color: rgb(241, 241, 243);
+   background-color: beige;
+}
+.col-bron{
+    background-color: rgb(66, 114, 185);
+    color: beige;
+    font-family: sans-serif;
+}
+.col-gol{
+    background-color: rgb(14, 67, 148);
+    color: beige;
+    font-family: sans-serif;
+}
+.col-lat{
+    background-color: rgb(8, 34, 75);
+    color: beige;
+    font-family: sans-serif;
 }
