@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(116, 105, 91);
+    background-color: rgb(218, 203, 184);
 }
 h1{
     text-align: center; color: aquamarine;
@@ -16,4 +16,7 @@ h2{
 h3{
 font-family: 'Dancing Script', cursive;
 font-size: 1.5em; color: rgb(71, 55, 34);
+}
+a:hover{
+    color: aquamarine;
 }
