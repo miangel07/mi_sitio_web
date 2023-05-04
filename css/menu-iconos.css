@@ -16,7 +16,7 @@ font-size: 0.8;
 ul{
     width: 80%;
     text-align: center;
-    height: 100px;
+    height: 85px;
     border-bottom: 1px solid rgb(64, 64, .3);
 }
 nav{
@@ -33,7 +33,7 @@ nav{
 .icon-style-nuevo{
     display: inline-block;
     color: rgb(64, 64, 64);
-    padding: 26px 30px 9px 30px;
+    padding: 26px 30px 10px 30px;
     font-size: 1em;
     font-family: sans-serif;
     line-height: 0.9;
