@@ -55,6 +55,7 @@ li:hover{
 @media only screen and (max-width: 1300px){
     .main-menu{
         display: none;
+  
     }
     .main-menu-block{
         display: block;
@@ -63,20 +64,20 @@ li:hover{
         margin-top: 125px;
         padding-top: 1px;
         text-align: center;
-      
-
+    }
+    .item-menu{
+        display: block;
+        border-bottom: 1px solid rgb(220, 220, 220, .7);
+        padding-bottom: 10px;
+        text-align: center;
     }
     .item-menu:hover{
-        display: block;
-        margin-top: 25px;
-        padding-bottom: 2px;
-        border-bottom: 1px solid rgb(7, 7, 7);
-    
-        background-color: dodgerblue;
+    cursor: pointer;
+    background-color: dodgerblue;
       
     }
     .img-background{
-        background-image: url("../img/Captura.PNG");
+        background-image: url("../img/Captura\ de\ pantalla\ 1.png");
         background-size: cover;
     }
     .logo-hamburguer{

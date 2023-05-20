@@ -1,15 +1,17 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../mi_sitio_web/img/1_vxjAHkrXbGG6gOiPZgjeZA.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-    background-image: url("/img/1_vxjAHkrXbGG6gOiPZgjeZA.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .nav{
     background: #293241;
@@ -55,7 +57,7 @@ body{
 
 }
 .nav-input:checked + .nav-menu{
-    background: tomato;
+    background: rgb(161, 136, 132);
 }
 .nav__label, .nav-input{
     display: none;
@@ -63,7 +65,13 @@ body{
 a:hover{
     color: aquamarine;
 }
-@media (max-width: 700px){
+@media only screen and (max-width: 1300px){
+    body{
+        background-image: url("../mi_sitio_web/img/Captura\ de\ pantalla\ 2023.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .nav__label{
         display: block;
         cursor: pointer;
@@ -72,7 +80,7 @@ a:hover{
 position: fixed;
 top:80px;
 bottom: 0;
-background: #f08080;
+background: #ad8d8d;
 width: 100%;
 left:0;
 display: flex;
