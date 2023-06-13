@@ -51,17 +51,67 @@ cursor: pointer;
     background-color: rgb(3, 116, 219);
     border-radius: 70px;
 }
-.box-4-1{
- position: relative;
- top: 5px;
- left: 5px;
-    width: 110px;
-    height: 110px;
-    border-radius: 55px;
-    background-color: whitesmoke;
-    transition: left 1500ms;
+
+.main-box{
+    position: relative;
+    width: 240px;
+    height: 120px;
+    border-radius: 70px;
+    z-index: 20;
+ 
+}
+.main-box-off {
+    background-color: rgb(95, 89, 89);
+    transition: background-color 1s;
+}
+.main-box-on {
+    background-color: rgb(10, 116, 214);
+    transition: background-color 1s;
+}
+.main-box:hover {
     cursor: pointer;
 }
+
+
+
+.contenedor-1{
+    position: relative;
+    top: -35px;
+    left: 10px;
+    width: 110px;
+    height: 110px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 55px;
+    transition: all 1s;
+    z-index: 11;
+}
+
+
+
+
+.contenedor-2{
+    position: relative;
+    top: -35px;
+    left: 120px;
+    width: 110px;
+    height: 110px;
+    background-color:rgb(73, 62, 62);
+    border-radius: 55px;
+    transition: all 1s;
+    z-index: 10
+}
+.text-on, .text-off {
+    position: relative;
+    font-size: 2.2em;
+    left: 15px;
+    top: 40px;
+    color: white;
+    z-index: 5;
+}
+.text-off {
+    left: 105px;
+}
+
 /* 
 .box-4:hover > .box-4-1{
     cursor: pointer;

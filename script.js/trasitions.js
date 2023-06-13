@@ -1,16 +1,22 @@
 
-let box = document.getElementById("box");
-let box2 = document.getElementById("box2");
+let contenedorGrande= document.getElementById("contenedorGrande");
+let contenedor =document.getElementById("contenedor");
 
-box.addEventListener("click", function() {
-    if (box.classList.contains("box")) {
-        box.classList.add("box2");
-        box.classList.remove("box");
-    }
-    else {
-        box2.classList.remove("box");
-        box2.classList.add("box2");  
-    }
-});
+contenedorGrande.addEventListener("click",function(){
+if(contenedor.classList.contains("contenedor-1")){
+contenedor.classList.add("contenedor-2");
+contenedor.classList.remove("contenedor-1");
+contenedor.classList.add("main-box-off");
+contenedor.classList.remove("main-box-on");
+}
+else{
+    contenedor.classList.remove("contenedor-2")
+    contenedor.classList.add("contenedor-1")
+    contenedorGrande.classList.remove("main-box-on");
+    contenedorGrande.classList.add("main-box-off");
+}
+})
+
+
 
  
