@@ -14,9 +14,10 @@ body{
 
 
 .nav{
-    background: #293241;
+    z-index: 10;
+    background: #303133;
     height: 80px;
-    color: white;
+    color: rgb(255, 253, 253);
 }
 .va__container{
     display: flex;
@@ -31,6 +32,7 @@ body{
     font-weight: 900;
 }
 .nav-menu{
+    z-index: 11;
     display: grid;
     grid-auto-flow: column;
     gap: 3em;
@@ -57,7 +59,7 @@ body{
 
 }
 .nav-input:checked + .nav-menu{
-    background: rgb(161, 136, 132);
+    z-index: 5;
 }
 .nav__label, .nav-input{
     display: none;
@@ -89,8 +91,10 @@ flex-direction: column;
 align-items: center;
 clip-path: circle(0 at center);
 transition: clip-path 1s ease-in-out;
+
 }
 }
 .nav-input:checked + .nav-menu{
 clip-path: circle(100% at center);
+
 } 
