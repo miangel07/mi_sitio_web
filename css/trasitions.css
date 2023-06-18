@@ -61,12 +61,14 @@ cursor: pointer;
  
 }
 .main-box-off {
-    background-color: rgb(48, 35, 224);
+    background-color: rgb(80, 79, 92);
     transition: background-color 1s;
+    
 }
 .main-box-on {
     background-color: rgb(10, 116, 214);
     transition: background-color 1s;
+     
 }
 .main-box:hover {
     cursor: pointer;
@@ -77,12 +79,20 @@ cursor: pointer;
     background-color: rgb(0, 0, 0);
    width: 100%;
    transition: background-color 2s;
+   text-align: justify;
+   color: rgb(255, 255, 255);
+ 
 }
 
 .dia{
     background-color: white;
     position: relative;
     transition: background-color 1s;
+
+    
+}
+p{
+    font-size: 55px;
 }
 
 
@@ -99,22 +109,8 @@ cursor: pointer;
 }
 
 
-p{
-    text-align: justify;
-    width: 80%;
-    line-height: 1.4em;
-    font-size: 55px;
-    color: rgb(255, 255, 255);
-  
-}
-.oscuro{
-    text-align: justify;
-    width: 80%;
-    line-height: 1.4em;
-    font-size: 55px;
-    color: rgb(0, 0, 0);
-    
-}
+ 
+
 
 .contenedor-2{
     position: relative;
