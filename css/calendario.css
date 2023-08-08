@@ -1,0 +1,147 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main-box {
+    width: 800px;
+    margin: 0 auto 0 auto;
+    gap: 20px;
+  background-color: #f5f6f7;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-box-shadow: 11px 12px 29px -3px rgba(0,0,0,0.62);
+    -moz-box-shadow: 11px 12px 29px -3px rgba(0,0,0,0.62);
+    box-shadow: 11px 12px 29px -3px rgba(0,0,0,0.62);
+}
+
+
+.box {
+    -webkit-box-shadow: 4px -9px 32px -17px rgba(0,0,0,0.69);
+    -moz-box-shadow: 4px -9px 32px -17px rgba(0,0,0,0.69);
+    box-shadow: 4px -9px 32px -17px rgba(0,0,0,0.69);
+    background-color: dodgerblue;
+    width: 100%;
+    height: 120px;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*   border: 1px solid black; */
+    
+}
+.box-1 {
+    -webkit-box-shadow: 4px -9px 32px -17px rgba(0,0,0,0.69);
+    -moz-box-shadow: 4px -9px 32px -17px rgba(0,0,0,0.69);
+    box-shadow: 4px -9px 32px -17px rgba(0,0,0,0.69);
+    width: 100%;
+    height: 120px;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*   border: 1px solid black; */
+    
+}
+
+.box-2 {
+    width: 100%;
+    height: 100%;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box-1 {
+    display: grid;    
+    grid-template-columns: 150px 150px 150px 150px;
+}
+.main-box-2 {
+    display: grid;
+    grid-template-columns: 1fr 150px 150px 1fr;
+}
+
+.main-box-3 {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 100px 300px 100px 50px;
+}
+
+.main-box-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box-4-1 {
+    background-color: goldenrod;
+    grid-column-start: 1;
+    grid-column-end: 5;    
+}
+
+.box-4-2 {
+    background-color: darkcyan;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    height: 100%;
+}
+
+.main-box-5 {
+    width: 960px;
+    margin: 0 auto 0 auto;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 120px);
+    grid-template: 150px        150px       150px       150px      150px    150px       150px;
+}
+
+.nombre-mes {
+    background-color: #f5f6f7;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    position: relative;
+    display: flex;
+  justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 60px;    
+}
+.dia-mes-7{
+    position: relative;
+    top: -40px;
+    left: 40px;
+    color: red;
+}
+.dia-semana {
+    text-align: center;
+    font-weight: 600;
+  border: 1px solid black; 
+    border-radius: 10%;
+
+}
+
+.dia1 {
+    -webkit-box-shadow: 4px -9px 32px -17px rgba(0,0,0,0.69);
+    -moz-box-shadow: 4px -9px 32px -17px rgba(0,0,0,0.69);
+    box-shadow: 4px -9px 32px -17px rgba(0,0,0,0.69);
+    background-color: #f5f6f7;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.dia-mes {
+    position: relative;
+    top: -40px;
+    left: 40px;
+}
+
+.domingo {
+    color: red;
+}
