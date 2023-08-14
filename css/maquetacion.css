@@ -1,9 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 .logo{
+    -webkit-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
     border-radius: 10px;
     grid-area: logo;
     background-color:  red;
@@ -11,6 +14,9 @@
     height: 120px;
 }
 .main-menu{
+    -webkit-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
+box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
     grid-area: main-menu;
 background-color: goldenrod;
 /* width: 400px; */
@@ -23,18 +29,18 @@ header{
     gap: 20px;
     display: grid;
     grid-template: "logo      main-menu  "/
-                   150px     minmax(700px, 1fr) ;
+                  150px    minmax(150px, 1fr) ;
 } 
 .main-page{
     grid-area: main-page;
 }
 body{
-  
+  background-color: #f5f6f7;
     width: 100%;
     height: 100vh;;
     display: grid;
     grid-template: "empty-left           main-page                   empty-right"/
-              minmax(50px, 1fr  )      minmax(700px, 1500px)        minmax(50px, 1fr  )   ;
+              minmax(50px, 1fr  )      minmax(200px, 1500px)        minmax(50px, 1fr  )   ;
 }
 .main-content{
 gap: 20px;
@@ -49,6 +55,9 @@ grid-template: "main-img       main-img      main-img "
             
 }
 .main-img{
+    /* -webkit-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
+box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75); */
 grid-area: main-img;
 background-color:darkcyan;
 height: 600px;
@@ -62,11 +71,28 @@ height: 600px;
 }
 /* articulos */
 .article{
-    border-radius: 10px;
-   height: 250px;
+ border-radius: 10px;
+ height: 250px;
 grid-area: article-1;
-background-color: rgb(64, 64, 64,.7);
+-webkit-box-shadow: inset 10px 8px 54px -14px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 8px 54px -14px rgba(0,0,0,0.75);
+box-shadow: inset 10px 8px 54px -14px rgba(0,0,0,0.75);
+background-color: #d9d0bd;
 }
+.article-1{
+ 
+    border-radius: 10px;
+    grid-area: article-1;
+    background-color: rgb(64, 64, 64,.7);
+}
+.style-img{
+  display: flex;
+margin-top: 110px;
+   justify-content: center;
+    font-size: 1.6em;
+    color: white;
+}
+
 .article-2{  
     border-radius: 10px;
     grid-area: article-2;
@@ -78,42 +104,64 @@ background-color: rgb(64, 64, 64,.7);
         background-color: rgb(64, 64, 64,.7);
  }
  .text-article-1 {
-    margin-top: -20px;
+    margin-top: 10px;
     grid-area: text-article-1 ;
  }
  .text-article-2{
-    margin-top: -20px;
+    margin-top: 10px;
     grid-area: text-article-2;
  }
  .text-article-3 {
-    margin-top: -20px;
+    margin-top: 10px;
     grid-area: text-article-3 ;
  }
 .nuew-1{
-    margin-top: -20px;
+    margin-top:10px;
     grid-area: nuew-1 ;
  }
  
 .nuew-2{
-    margin-top: -20px;
+    margin-top: 10px;
     grid-area: nuew-2 ;
  }
 .nuew-3{
-    margin-top: -20px;
+    margin-top: 10px;
     grid-area: nuew-3;
  }
  .text-article-1-2 {
-    margin-top: -20px;
+    margin-top: 10px;
     grid-area: text-article-1-2 ;
  }
  .text-article-2-2 {
-    margin-top: -20px;
+    margin-top: 10px;
     grid-area: text-article-2-2 ;
  }
- .text-article-3-3 {
-    margin-top: -20px;
+ .text-article-3-2 {
+    margin-top: 10px;
     grid-area: text-article-3-2 ;
  }
  .img-article{
     width: 100%;
  }
+@media only screen and (max-width: 600px){
+    .box{
+        display: grid;
+        grid-template-columns: auto;
+    }
+ .main-content{
+    display: grid;
+    grid-template:"main-img  " 
+                  "article-1 " 
+                  "text-article-1 "
+                  "article-2" 
+                  "text-article-2 "
+                  "article-3" 
+                  "text-article-3"
+                  "nuew-1 "
+                  "text-article-1-2 "
+                   "nuew-2"
+                   "text-article-2-2"
+                   "nuew-3"
+                  "text-article-3-2";
+ }
+ }   

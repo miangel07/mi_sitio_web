@@ -1,10 +1,12 @@
-body{
+ body{
     font-family: 'Roboto', sans-serif;
     background-image: url("../mi_sitio_web/img/1_vxjAHkrXbGG6gOiPZgjeZA.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.box{
+    margin-right: 800px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 *{
     margin: 0;
@@ -100,4 +102,4 @@ transition: clip-path 1s ease-in-out;
 .nav-input:checked + .nav-menu{
 clip-path: circle(100% at center);
 
-} 
+}  
