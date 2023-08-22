@@ -1,12 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Slab', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .logo{
-    -webkit-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
-    box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
     border-radius: 10px;
     grid-area: logo;
     background-color:  red;
@@ -14,9 +11,6 @@
     height: 120px;
 }
 .main-menu{
-    -webkit-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
     grid-area: main-menu;
 background-color: goldenrod;
 /* width: 400px; */
@@ -55,9 +49,7 @@ grid-template: "main-img       main-img      main-img "
             
 }
 .main-img{
-    /* -webkit-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75);
-box-shadow: 10px 9px 46px 4px rgba(0,0,0,0.75); */
+    
 grid-area: main-img;
 background-color:darkcyan;
 height: 600px;
@@ -74,10 +66,7 @@ height: 600px;
  border-radius: 10px;
  height: 250px;
 grid-area: article-1;
--webkit-box-shadow: inset 10px 8px 54px -14px rgba(0,0,0,0.75);
--moz-box-shadow: inset 10px 8px 54px -14px rgba(0,0,0,0.75);
-box-shadow: inset 10px 8px 54px -14px rgba(0,0,0,0.75);
-background-color: #d9d0bd;
+background-color:  rgb(64, 64, 64,.7);
 }
 .article-1{
  
