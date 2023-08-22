@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbuks</title>
     <link rel="stylesheet" href="css/starbuks.css">
+    <link rel="stylesheet" href="fontwesome/fontawesome-free-6.4.2-web/css/all.css">
 </head>
 <body>
     <header>
@@ -19,13 +20,30 @@
         </nav>
     </header>
     <div class="main-content">
-        <div class="circle"></div>
+        <div  class="img-principal"><img id="mainImg" src="img/img1.png" alt=""></div>
+        <div class="product-txt">
+            <h1>it' not justf coffe it's <span>Starbuks</span></h1>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur neque quia laudantium aspernatur! Velit ad 
+                quaerat optio qui? Aliquam dolores quae optio maiores eius illo esse rerum culpa alias sint.</p>
+                <div class="button-letra"> <a href="#">learn more</a>
+        </div>
+       
         <div class="social-media">
-            <img src="img/facebook.png" alt="">
-            <img src="img/instagram.png" alt="">
-            <img src="img/twitter.png" alt="">
+            <ul>
+          <li><i class="icono facebook fa-brands fa-facebook"></i></li>
+          <li><i class="icono twitter  fa-brands fa-twitter"></i></li>
+          <li><i class="icono instagram  fa-brands fa-instagram"></i></li>
+            </ul>
         </div>
     </div>
-    <script src="script.js/"></script>
+   
+    </div>
+    <div class="box-final">
+        <img id="iceGreen" class="style-img-mini"  src="img/thumb1.png" alt="">
+        <img id="iceRose"  class="style-img-mini"  src="img/thumb2.png" alt="">
+        <img id="icePink"  class="style-img-mini"  src="img/thumb3.png" alt="">
+    </div>
+    <div id="mainCircle" class="main-circle main-circle-green"></div>
+    <script src="script.js/starbucks.js"></script>
 </body>
 </html>

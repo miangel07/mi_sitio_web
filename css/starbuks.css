@@ -18,6 +18,62 @@ header{
 nav{
     grid-area: nav;
 }
+.main-content{
+   
+    margin-top: 140px;
+    display: grid;
+    grid-template: "empy-left  product-text  empy-center        product-img  social-media"/
+                    140px           5fr     minmax(0, 300px)        4fr           80px   ;  
+}
+.product-txt{
+    grid-area:product-text ;
+    font-size: 2.1em;
+}
+.product-txt span{
+   color:rgb(1, 113, 51);
+}
+.description-text p{
+    margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-weight: 500;
+  
+}
+.button-letra{
+    width: 200px;
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(2, 104, 64);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    letter-spacing: 0.1em;
+
+}
+.button-letra:hover{
+    width: 200px;
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(12, 71, 47);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    letter-spacing: 0.1em;
+
+}
+.button-letra a{
+    text-decoration: none;
+    color: white ;
+    font-size: 20px;         
+}
+.button-letra a:hover{
+    color: beige;
+}
 .menu{
     position: relative;
     padding: 20px;
@@ -35,14 +91,24 @@ nav{
     font-size: 1.2em;
     font-style: 500;
 }
-.circle{
+.main-circle{
     width: 1500px;
     height: 1500px;
-    background-color: rgb(246, 148, 165);
     border-radius: 750px;
     position: fixed;
     bottom: -720px;
     right: -720px;
+}
+.main-circle-rose{
+    background-color:  rgb(213, 104, 136) ;
+} 
+.main-circle-pink{
+    background-color:  rgb(215, 81, 176);
+   
+}
+.main-circle-green{
+    background-color:rgb(12, 71, 47);
+   
 }
 .social-media{
     display: flex;
@@ -56,5 +122,40 @@ nav{
     right: 0;
     gap: 20px;
     top: 0;
-    
+    z-index: 20;
 }
+.icono{
+    display: flex;
+    font-size: 40px;
+    color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-principal{
+    height: 600px;
+    grid-area:  product-img;
+    z-index: 5;
+}
+.img-principal img{
+    height: 100%;
+    transition: 0.4s;
+}
+.img-principal img:hover{
+    transform: translateY(-60px);
+}
+.box-final img:hover{
+    transform: translateY(-60px);
+}
+.box-final img{
+    transition: 0.8s;
+}
+.social-media ul{
+    list-style: none;
+    cursor: pointer;
+}
+
