@@ -101,14 +101,13 @@ nav{
 
 }
 .main-circle-rose{
-    background-color:  rgb(213, 104, 136) ;
+   background-color:  rgb(213, 104, 136) ; 
 } 
 .main-circle-pink{
-    background-color:  rgb(215, 81, 176);
-   
+ background-color:  rgb(215, 81, 176);
 }
 .main-circle-green{
-    background-color:rgb(12, 71, 47);
+    background-color:rgb(12, 71, 47); 
    
 }
 .social-media{
@@ -141,18 +140,19 @@ margin-right: 200px;
 
 }
 .img-principal{
+
     height: 600px;
     grid-area:  product-img;
 }
-/* .img-principal img{
+.img-principal img{
  z-index: 20;
-    height: 100%;
-    transition: 0.4s;
+ position: absolute;
+ z-index: 20;
 }
 .img-principal img:hover{
     transform: translateY(-60px);
    
-} */
+}
 .box-final img:hover{
     transform: translateY(-60px);
 }
