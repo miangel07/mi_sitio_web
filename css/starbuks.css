@@ -5,8 +5,9 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 header{
+    height: -100px;
     display: grid;
-    grid-template: "logo nav"80px/
+    grid-template: "logo nav"10px/
                     1fr  1fr;
 }
 .logo{
@@ -19,7 +20,8 @@ nav{
     grid-area: nav;
 }
 .main-content{
-   
+    z-index: 20;
+position: fixed;
     margin-top: 140px;
     display: grid;
     grid-template: "empy-left  product-text  empy-center        product-img  social-media"/
@@ -95,9 +97,11 @@ nav{
     width: 1500px;
     height: 1500px;
     border-radius: 750px;
-    position: fixed;
+  position: fixed;
     bottom: -720px;
     right: -720px;
+    z-index: 10;
+
 }
 .main-circle-rose{
     background-color:  rgb(213, 104, 136) ;
@@ -122,7 +126,7 @@ nav{
     right: 0;
     gap: 20px;
     top: 0;
-    z-index: 20;
+    
 }
 .icono{
     display: flex;
@@ -132,21 +136,25 @@ nav{
     justify-content: center;
 }
 .box-final{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+ display: flex;
+   justify-content: center;
+   margin-bottom: 500px;
+   margin-left: 700px;
+   margin-top: 480px;
 }
 .img-principal{
     height: 600px;
     grid-area:  product-img;
-    z-index: 5;
 }
 .img-principal img{
+ z-index: 20;
     height: 100%;
     transition: 0.4s;
 }
 .img-principal img:hover{
     transform: translateY(-60px);
+   
 }
 .box-final img:hover{
     transform: translateY(-60px);
