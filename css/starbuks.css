@@ -7,7 +7,7 @@
 header{
     height: -100px;
     display: grid;
-    grid-template: "logo nav"10px/
+    grid-template: "logo nav"80px/
                     1fr  1fr;
 }
 .logo{
