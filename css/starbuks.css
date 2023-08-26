@@ -20,8 +20,6 @@ nav{
     grid-area: nav;
 }
 .main-content{
-    z-index: 20;
-
     margin-top: 140px;
     display: grid;
     grid-template: "empy-left  product-text  empy-center        product-img  social-media"/
@@ -100,7 +98,6 @@ nav{
   position: fixed;
     bottom: -720px;
     right: -720px;
-    z-index: 10;
 
 }
 .main-circle-rose{
@@ -140,13 +137,14 @@ display: flex;
 justify-content: center; 
 align-items: center;
 margin-top: -150px;
+margin-right: 200px;
 
 }
 .img-principal{
     height: 600px;
     grid-area:  product-img;
 }
-.img-principal img{
+/* .img-principal img{
  z-index: 20;
     height: 100%;
     transition: 0.4s;
@@ -154,7 +152,7 @@ margin-top: -150px;
 .img-principal img:hover{
     transform: translateY(-60px);
    
-}
+} */
 .box-final img:hover{
     transform: translateY(-60px);
 }
