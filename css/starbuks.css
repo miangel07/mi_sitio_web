@@ -29,16 +29,17 @@ nav{
     grid-area:product-text ;
     font-size: 2.1em;
 }
+.product-txt h1{
+    font-size: 1.5em;
+}
 .product-txt span{
    color:rgb(1, 113, 51);
 }
 .description-text p{
     margin-top: 30px;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3em;
-  line-height: 1.5em;
+  line-height: 1em;
   font-weight: 500;
-  
 }
 .button-letra{
     width: 200px;
@@ -146,7 +147,7 @@ margin-right: 200px;
     grid-area:  product-img;
 }
 .img-principal img{
- z-index: 20;
+transition: 0.4s;
  position: absolute;
  z-index: 20;
 }
