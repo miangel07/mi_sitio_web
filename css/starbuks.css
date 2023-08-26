@@ -21,7 +21,7 @@ nav{
 }
 .main-content{
     z-index: 20;
-position: fixed;
+
     margin-top: 140px;
     display: grid;
     grid-template: "empy-left  product-text  empy-center        product-img  social-media"/
@@ -136,12 +136,11 @@ position: fixed;
     justify-content: center;
 }
 .box-final{
+display: flex;
+justify-content: center; 
+align-items: center;
+margin-top: -150px;
 
- display: flex;
-   justify-content: center;
-   margin-bottom: 500px;
-   margin-left: 700px;
-   margin-top: 480px;
 }
 .img-principal{
     height: 600px;
