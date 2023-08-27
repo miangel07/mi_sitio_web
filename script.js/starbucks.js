@@ -1,24 +1,30 @@
-let iceGreen = document.getElementById("iceGreen");
+ let iceGreen = document.getElementById("iceGreen");
 let iceRose = document.getElementById("iceRose");
 let icePink = document.getElementById("icePink");
-let mainImg = document.getElementById("mainImg");
+var elemento = document.getElementById("img");
 iceGreen.addEventListener("click", function(){
     mainCircle.classList.add("main-circle-green");
     mainCircle.classList.remove("main-circle-rose");
     mainCircle.classList.remove("main-circle-pink");
-    mainImg.setAttribute("src","/img/verde.png");
+    elemento.setAttribute("src", "/img/verde.png");
 }
+/* "mouseover" */
 )
 iceRose.addEventListener("click", function(){
     mainCircle.classList.remove("main-circle-green");
     mainCircle.classList.add("main-circle-rose");
     mainCircle.classList.remove("main-circle-pink");
-    mainImg.setAttribute("src","/img/rosa.png");
+    elemento.setAttribute("src", "/img/rosa.png");
 })
 icePink.addEventListener("click", function(){
     mainCircle.classList.remove("main-circle-green");
     mainCircle.classList.remove("main-circle-rose");
     mainCircle.classList.add("main-circle-pink");
-    mainImg.setAttribute("src","/img/rosa2.png");
+    elemento.setAttribute("src", "/img/rosa2.png");
 })
+
+
+/* function imgSlider(anything){
+    document.querySelector('.img').src = anything;
+} */
 
