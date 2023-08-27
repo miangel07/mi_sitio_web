@@ -20,7 +20,7 @@ nav{
     grid-area: nav;
 }
 .main-content{
-    margin-top: 140px;
+    margin-top: 50px;
     display: grid;
     grid-template: "empy-left  product-text  empy-center        product-img  social-media"/
                     140px           5fr     minmax(0, 300px)        4fr           80px   ;  
