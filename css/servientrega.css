@@ -1,0 +1,480 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/*    LOS ESTILOS VAN A ESTAR ORDENADOS POR SECCIONES PARA NO ENREDARNOS
+Y PARA SABER EN DONDE PODER ENCONTRA LAS CLASES DE CADA SECCION. */
+
+/* SECCION EMERSSON = EN esta seccion van a estar las clases */
+.main-menu-1 {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-main-menu-2 {
+    background-color: rgb(40, 173, 91);
+    color: white;
+    display: grid;
+    grid-template: "empty-left        main-menu-2 empty-center      btn-ingresar empty-right" /
+                    minmax(10px, 1fr) 800px       minmax(10px, 2fr) 100px          minmax(10px, 1fr);
+    height: 60px;
+}
+.main-menu-2 {
+    /* background-color: blue; */
+    grid-area: main-menu-2;
+    display: flex;
+     justify-content: space-evenly;
+    align-items: center;
+    /* position: absolute; */
+    flex-direction: row;
+    width: 800px;
+    height: 60px;
+    color: white;
+
+}
+.btn-ingresar {
+    grid-area: btn-ingresar;
+}
+/* Sub-Menu */
+/* .li-rastrear { */
+/*     background-color:blue;
+    width: 65px;
+    height: 60px; */
+/*     display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* overflow: hidden; */
+/*     height: 5px; */
+    /* position: absolute; */
+/* } */
+/* .nivel-dos {
+    position: relative;
+    color: black;
+    top: 100%;
+    left: 100%;
+    background-color: red; */
+   /* background-color: red;
+   position: relative;
+   top: 200%; */
+/*     top: 95px; */
+/*     margin-left: 45px;
+    width: 110px;
+    height: 50px;  */ 
+/* } *//*
+.sub-item {
+    background-color: #d2369e;
+    width: 500px;
+    height: 100px;
+    display: block;
+    margin-top: 300px;
+    position: absolute;
+    z-index: 20;
+}
+/* menu-inicio; lisa-estilos; menu y btn-menu*/ */
+/* .menu-inicio {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.linea{
+   margin-top: -20px;
+    position: absolute;
+   margin-left: -45px;
+    width: 5px;
+    height: 250px;
+    background-color: #d2369e;
+
+}
+
+.menu-inicio ul {
+    position: relative;
+    left: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.8em;
+    color: rgb(128, 128, 128);
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   /*  color: white; */
+/*     font-size: 1em;
+    letter-spacing: 0.02em;
+} */
+ */
+/* sub-items */
+/* .menu  ul .lista-estilos .nivel-dos{ */
+   /* display: inline-block;
+   line-height: 50px;*/
+/*    width: 300px;
+   display: flex;
+   flex-direction: column; */
+/* }  */
+
+
+/* segundo nivel */
+/* .menu li li {
+    max-height: 0;
+    overflow: hidden;
+} */
+
+/* .menu li:hover>ul>li {
+    visibility: visible;
+    max-height: 500px;
+    overflow: visible;
+} */
+
+
+/* fin de subitems */
+
+/* .menu {
+    background-color: rgb(40, 173, 91);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: static;
+}
+
+.lista-estilos {
+    list-style: none;
+}
+
+.btn-menu {
+    position: relative;
+    height: 35px;
+    width: 120px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    left: 75px;
+} */
+
+/* FIN DE ESTILOS DE LA SECCON EMERSSON */
+
+
+
+/* INICIO DE LA SECCION MIGUEL */
+/* .box-1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    grid-area: contenido;
+    height: 200px;
+}
+
+.img-principal {
+    position: relative;
+    left: 30px;
+    top: 40px;
+    display: flex;
+    height: 330px;
+    width: 500px;
+}
+*/
+.box-principal {
+    align-items: center;
+    display: grid;
+    grid-template: "empty-right  contenido  empty-left" /
+                         1fr       1200px      1fr;
+    width: 100%;
+    /* height: 405px; */
+    background-color: #f5f6f7;
+    -webkit-box-shadow: inset 10px -52px 94px -131px rgba(0, 0, 0, 0.01);
+    -moz-box-shadow: inset 10px -52px 94px -131px rgba(0, 0, 0, 0.01);
+    box-shadow: inset 10px -52px 94px -131px rgba(0, 0, 0, 0.01);
+    position: relative;
+    /* z-index: -10; */
+}
+/*
+.txt-contenido {
+    display: flex;
+}
+
+.hapy {
+    font-size: 30px;
+
+}
+
+.txt-descripcion {
+    line-height: 40px;
+    font-size: 26px;
+}
+
+.txt-mundo {
+    font-size: 30px;
+} */
+
+/* FIN DE LOS ESTILOS DE SECCION MIGUEL */
+
+
+
+
+/* INICIO DE LOS ESTILOS DE LOS ESTILOS DE LA CLASEE
+BOX-CONSULTA */
+/* .box-consulta {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.consulta {
+    width: 550px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gainsboro;
+    border-radius: 40px;
+    position: relative;
+    top: -35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    -webkit-box-shadow: 8px 3px 39px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 3px 39px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 8px 3px 39px -7px rgba(0, 0, 0, 0.75);
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #DF1995;
+    border-radius: 50%;
+} */
+
+/* FIN DE ESTILOS DE LA CLASE  box-consulta*/
+
+
+
+/* estilos de centrado flex-box ESTILOS GENERALES*/
+/* .centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* FIN DE ESTILOS DE CENTRADO GENERAL */
+
+
+
+/* INICO DE ESTILOS DE H2 GENERALES */
+/* h2 {
+    color: #525252;
+    letter-spacing: 0.2px;
+    font-size: 1.5em;
+} */
+
+/* FIN DE ESTILOS DE H2 GENERALES */
+
+
+
+/*  */
+/* .cajas {
+  
+    width: 100%;
+    display: grid;
+    grid-template: "empty-left      main-page     empty-right"
+        / minmax(90px, 1fr) minmax(700px, 1300px) minmax(90px, 1fr);
+    margin-top: 50px;
+}
+
+.main-page {
+    grid-area: main-page;
+}
+
+.main-content {
+    display: grid;
+    grid-template: "caja-1 caja-2 caja-3" /360px 360px 360px;
+    gap: 40px;
+
+}
+
+.box-soluciones {
+    -webkit-box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
+    -moz-box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3%;
+  transition: all 0.5s;
+    border-radius: 10px;
+}
+.box-soluciones:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 2px 15px 56px -12px rgba(0,0,0,0.42);
+    -moz-box-shadow: 2px 15px 56px -12px rgba(0,0,0,0.42);
+    box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
+    transform: translate(-15px); 
+}
+.box-soluciones:hover h2 {
+    color: rgb(40, 173, 91);
+}
+.caja-1 {
+    grid-area: caja-1;
+}
+
+.ultimas {
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.caja {
+    -webkit-box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
+    -moz-box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
+   
+
+    transition: all 0.5s;
+    width: 520px;
+    height: 260px;
+}
+.caja:hover{
+    -webkit-box-shadow: 2px 15px 56px -12px rgba(0,0,0,0.42);
+-moz-box-shadow: 2px 15px 56px -12px rgba(0,0,0,0.42);
+box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
+
+    transform: translate(-15px);
+   
+}
+
+.link {
+    color: rgb(40, 173, 91);
+} */
+
+/* FIN DE ESTILOS DE LAS CINCO CAJAS */
+
+/* INICIO DE ESTILOS DE SECCION DE IMG DE SELECCION COLOMBIA     */
+/* .box-seleccion {
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img-sele {
+    height: 100%;
+    width: 50%;
+}
+
+.img-sele img {
+    width: 100%;
+    height: 100%;
+}
+
+.parrafo-sele {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.button-sele {
+    color: white;
+    background-color: rgb(40, 173, 91);
+    width: 100px;
+    height: 50px;
+    border-radius: 80px 30px;
+
+} */
+
+/* secion celulares*/
+/*  .box-final{
+
+ }
+ .box-gray{
+    margin-top: 150px;
+    width: 100%;
+    height: 200px;
+    background-color: green;
+ } */
+
+.li-rastrear:hover {
+    cursor: pointer;
+/*     height: 500px;
+    width: 300px; */
+}
+
+
+/* .li-rastrear > ul > li {
+    visibility: visible;
+    max-height: 500px;
+    overflow: visible;
+} */
+ .nivel-dos {
+  /*   width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(250,250,250);
+    margin-top: 32px;
+    display: block;
+    padding: 35px;
+    border-radius: 8px;
+    z-index: 30;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    
+}
+.li-reastrear:hover > .nivel-dos {
+   /*  cursor: pointer;
+    height: auto;
+    overflow: auto;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(250,250,250);
+    margin-top: 32px;
+    display: block;
+    padding: 35px;
+    border-radius: 8px;
+    z-index: 30;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.nivel-dos:hover {
+/*     cursor: pointer;
+    height: auto;
+    overflow: auto;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(250,250,250);
+    margin-top: 32px;
+    display: block;
+    padding: 35px;
+    border-radius: 8px;
+    z-index: 30;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+/* .nivel-dos > .sub-item {
+    gap: 0;
+    margin: 0;
+    line-height: 30px;
+}
+.nivel-dos > li:hover {
+    color: rgb(40, 173, 91);
+    cursor: pointer;
+    padding-left: 5px;
+    border-left: 1px solid rgb(40, 173, 91);
+} */
+

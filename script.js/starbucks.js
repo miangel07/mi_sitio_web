@@ -24,7 +24,4 @@ icePink.addEventListener("click", function(){
 })
 
 
-/* function imgSlider(anything){
-    document.querySelector('.img').src = anything;
-} */
 
