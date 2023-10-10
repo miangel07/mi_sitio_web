@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.main-content{
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.lbl-subtotal{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+.box-proceder-pago{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(247, 231, 8);
+    font-size: 1.6em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.box-info{
+    line-height: 3em;
+  
+    padding: 20px;
+    flex-direction: column;
+    display:flex ;
+}
+.box-productos{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.book-descripcion{
+    font-size: 1.6em;
+    font-weight: 500;
+
+}
+.book-autor{
+    padding-top:50px ;
+    font-size: 1.4em;
+}
+.tipo-tapa{
+    display: flex;
+  
+    font-size: 1.3em;
+}
+.txt-precio-unidad{
+    margin-top: 95px;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.box-minus-plus{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 20px;
+}
+.box-minus{
+border-left: 1px solid rgb(48, 48, 48);
+border-right: 1px solid rgb(48, 48, 48);
+}
+.box-minus,.box-unidades,.box-plus{
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(24, 24, 24);
+}
+.box-minus,.box-plus{
+    background-color: white;
+}
