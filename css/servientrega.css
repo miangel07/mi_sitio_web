@@ -1,179 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Archivo+Black&family=Arvo:ital@1&family=Ruwudu:wght@400;500&family=Space+Grotesk:wght@500&family=Tilt+Prism&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     list-style: none;
     text-decoration: none;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Arvo', serif;
+    font-family: 'Ruwudu', serif;
+    font-family: 'Space Grotesk', sans-serif;
 }
-/*    LOS ESTILOS VAN A ESTAR ORDENADOS POR SECCIONES PARA NO ENREDARNOS
-Y PARA SABER EN DONDE PODER ENCONTRA LAS CLASES DE CADA SECCION. */
 
-/* SECCION EMERSSON = EN esta seccion van a estar las clases */
+img {
+    cursor: pointer;
+}
+
+
+/* ############# Estilos del slider */
+
+.box-box-slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+.box-slider{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    position: relative;
+    width: 400%;
+    transition: left 2.5s;
+}
+
+.img-slider{
+    width: 100%;
+}
+
+.slider-img1 {
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+
+.slider-img2 {
+    position: relative;
+    left: -100%;
+    width: 100%;
+}
+
+.slider-img3 {
+    position: relative;
+    left: -200%;
+    width: 100%;
+}
+
+.slider-img4 {
+    position: relative;
+    left: -300%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* SECCION EMERSSON = EN esta seccion van a estar las clases */
+.box-principal {
+    align-items: center;
+    display: grid;
+    grid-template: "empty-right  contenido  empty-left" / 1fr 1600px 1/2fr;
+    width: 100%;
+    background-color: #f5f6f7;
+    -webkit-box-shadow: inset 10px -52px 94px -131px rgba(0, 0, 0, 0.01);
+    -moz-box-shadow: inset 10px -52px 94px -131px rgba(0, 0, 0, 0.01);
+    box-shadow: inset 10px -52px 94px -131px rgba(0, 0, 0, 0.01);
+    position: relative;
+}
+
+.box-main-menu-1 {
+    display: grid;
+    grid-template: "empty-left main-menu-1 empty-right" / 3fr 420px 1fr;
+}
+
 .main-menu-1 {
+    grid-area: main-menu-1;
     width: 100%;
     height: 35px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
+
 .box-main-menu-2 {
     background-color: rgb(40, 173, 91);
     color: white;
     display: grid;
-    grid-template: "empty-left        main-menu-2 empty-center      btn-ingresar empty-right" /
-                    minmax(10px, 1fr) 800px       minmax(10px, 2fr) 100px          minmax(10px, 1fr);
+    grid-template: "empty-left        main-menu-2 empty-center      btn-ingresar empty-right" / minmax(10px, 1fr) 800px minmax(10px, 2fr) 100px minmax(10px, 1fr);
     height: 60px;
+    align-items: center;
 }
+
 .main-menu-2 {
-    /* background-color: blue; */
     grid-area: main-menu-2;
     display: flex;
-     justify-content: space-evenly;
+    justify-content: space-evenly;
     align-items: center;
-    /* position: absolute; */
     flex-direction: row;
     width: 800px;
     height: 60px;
     color: white;
-
 }
+
+.main-menu-2 li:hover>.nivel-dos {
+    visibility: visible;
+}
+
+.logo-servientrega {
+    width: 270px;
+    height: 50px;
+}
+
+.logo-servientrega img {
+    width: 100%;
+    height: 100%;
+}
+
 .btn-ingresar {
     grid-area: btn-ingresar;
 }
-/* Sub-Menu */
-/* .li-rastrear { */
-/*     background-color:blue;
-    width: 65px;
-    height: 60px; */
-/*     display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* overflow: hidden; */
-/*     height: 5px; */
-    /* position: absolute; */
-/* } */
-/* .nivel-dos {
-    position: relative;
+
+.nivel-dos {
+    position: absolute;
+    top: 50px;
     color: black;
-    top: 100%;
-    left: 100%;
-    background-color: red; */
-   /* background-color: red;
-   position: relative;
-   top: 200%; */
-/*     top: 95px; */
-/*     margin-left: 45px;
-    width: 110px;
-    height: 50px;  */ 
-/* } *//*
-.sub-item {
-    background-color: #d2369e;
-    width: 500px;
-    height: 100px;
-    display: block;
-    margin-top: 300px;
-    position: absolute;
-    z-index: 20;
+    margin-top: 45px;
+    padding: 22px 0;
+    visibility: hidden;
+    background-color: white;
+    box-shadow: -8px 0px 28px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
-/* menu-inicio; lisa-estilos; menu y btn-menu*/ */
-/* .menu-inicio {
-    width: 100%;
-    height: 35px;
+
+.nivel-dos>li {
+    padding: 8px 45px 8px 35px;
+}
+
+.lista-menu-soluciones {
     display: flex;
-    justify-content: space-evenly;
-}
-.linea{
-   margin-top: -20px;
-    position: absolute;
-   margin-left: -45px;
-    width: 5px;
-    height: 250px;
-    background-color: #d2369e;
-
+    gap: 30px;
 }
 
-.menu-inicio ul {
-    position: relative;
-    left: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    font-size: 0.8em;
-    color: rgb(128, 128, 128);
+.lista-estilos:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #8EDD65;
 }
-
-.menu ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-   /*  color: white; */
-/*     font-size: 1em;
-    letter-spacing: 0.02em;
-} */
- */
-/* sub-items */
-/* .menu  ul .lista-estilos .nivel-dos{ */
-   /* display: inline-block;
-   line-height: 50px;*/
-/*    width: 300px;
-   display: flex;
-   flex-direction: column; */
-/* }  */
-
-
-/* segundo nivel */
-/* .menu li li {
-    max-height: 0;
-    overflow: hidden;
-} */
-
-/* .menu li:hover>ul>li {
-    visibility: visible;
-    max-height: 500px;
-    overflow: visible;
-} */
-
-
-/* fin de subitems */
-
-/* .menu {
-    background-color: rgb(40, 173, 91);
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: static;
-}
-
-.lista-estilos {
-    list-style: none;
-}
-
-.btn-menu {
-    position: relative;
-    height: 35px;
-    width: 120px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    left: 75px;
-} */
 
 /* FIN DE ESTILOS DE LA SECCON EMERSSON */
 
 
-
 /* INICIO DE LA SECCION MIGUEL */
-/* .box-1 {
+.box-1 {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    grid-area: contenido;
-    height: 200px;
+    height: 400px;
+    background-color: #F6F5F5;
 }
 
 .img-principal {
@@ -184,29 +184,18 @@ Y PARA SABER EN DONDE PODER ENCONTRA LAS CLASES DE CADA SECCION. */
     height: 330px;
     width: 500px;
 }
-*/
-.box-principal {
-    align-items: center;
-    display: grid;
-    grid-template: "empty-right  contenido  empty-left" /
-                         1fr       1200px      1fr;
-    width: 100%;
-    /* height: 405px; */
-    background-color: #f5f6f7;
-    -webkit-box-shadow: inset 10px -52px 94px -131px rgba(0, 0, 0, 0.01);
-    -moz-box-shadow: inset 10px -52px 94px -131px rgba(0, 0, 0, 0.01);
-    box-shadow: inset 10px -52px 94px -131px rgba(0, 0, 0, 0.01);
-    position: relative;
-    /* z-index: -10; */
-}
-/*
-.txt-contenido {
-    display: flex;
+
+.linea {
+    margin-top: -20px;
+    position: absolute;
+    margin-left: -45px;
+    width: 5px;
+    height: 250px;
+    background-color: #d2369e;
 }
 
 .hapy {
     font-size: 30px;
-
 }
 
 .txt-descripcion {
@@ -216,16 +205,13 @@ Y PARA SABER EN DONDE PODER ENCONTRA LAS CLASES DE CADA SECCION. */
 
 .txt-mundo {
     font-size: 30px;
-} */
+}
 
 /* FIN DE LOS ESTILOS DE SECCION MIGUEL */
 
 
-
-
-/* INICIO DE LOS ESTILOS DE LOS ESTILOS DE LA CLASEE
-BOX-CONSULTA */
-/* .box-consulta {
+/* INICIO DE LOS ESTILOS DE LOS ESTILOS DE LA CLAS BOX-CONSULTA */
+.box-consulta {
     width: 100%;
     height: 70px;
     display: flex;
@@ -233,10 +219,9 @@ BOX-CONSULTA */
 }
 
 .consulta {
-    width: 550px;
+    width: 620px;
     height: 70px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid gainsboro;
     border-radius: 40px;
     position: relative;
     top: -35px;
@@ -253,37 +238,47 @@ BOX-CONSULTA */
     height: 50px;
     background-color: #DF1995;
     border-radius: 50%;
-} */
+    cursor: pointer;
+}
+
+.select-consulta {
+    border: none;
+    height: 30px;
+    border-right: 2px solid rgb(78, 78, 78);
+}
+
+.txt-consulta {
+    width: 80px;
+    border-right: 2px solid rgb(77, 76, 76);
+}
+
+.input-box-consultar {
+    border: none;
+    height: 50px;
+}
 
 /* FIN DE ESTILOS DE LA CLASE  box-consulta*/
 
 
-
-/* estilos de centrado flex-box ESTILOS GENERALES*/
-/* .centrado {
+/* estilos de centrado flex-box ESTILOS GENERALES se utiliza para no estar escribiendo codigo de centrar con flex */
+.centrado-general {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 
 /* FIN DE ESTILOS DE CENTRADO GENERAL */
 
-
-
 /* INICO DE ESTILOS DE H2 GENERALES */
-/* h2 {
+h2 {
     color: #525252;
     letter-spacing: 0.2px;
     font-size: 1.5em;
-} */
+}
 
 /* FIN DE ESTILOS DE H2 GENERALES */
 
-
-
-/*  */
-/* .cajas {
-  
+.cajas {
     width: 100%;
     display: grid;
     grid-template: "empty-left      main-page     empty-right"
@@ -303,74 +298,79 @@ BOX-CONSULTA */
 }
 
 .box-soluciones {
-    -webkit-box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
-    -moz-box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
+    /*  -webkit-box-shadow: 2px 15px 47px -12px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 2px 15px 47px -12px rgba(0, 0, 0, 0.42);*/
+    box-shadow: 0 5px 13px rgba(0, 0, 0, );
     height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 3%;
-  transition: all 0.5s;
+    transition: all 0.5s;
     border-radius: 10px;
+    border: 1px solid rgb(255, 250, 250);
 }
-.box-soluciones:hover{
+
+.box-soluciones:hover {
     cursor: pointer;
-    -webkit-box-shadow: 2px 15px 56px -12px rgba(0,0,0,0.42);
-    -moz-box-shadow: 2px 15px 56px -12px rgba(0,0,0,0.42);
-    box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
-    transform: translate(-15px); 
+    -webkit-box-shadow: 2px 15px 56px -12px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 2px 15px 56px -12px rgba(0, 0, 0, 0.42);
+    box-shadow: 2px 15px 47px -12px rgba(0, 0, 0, 0.42);
+    transform: translate(-15px);
+
 }
+
 .box-soluciones:hover h2 {
     color: rgb(40, 173, 91);
 }
-.caja-1 {
-    grid-area: caja-1;
-}
 
-.ultimas {
+.cajas-soluciones {
     gap: 40px;
     margin-top: 80px;
 }
 
-.caja {
-    -webkit-box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
-    -moz-box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
-   
-
-    transition: all 0.5s;
-    width: 520px;
-    height: 260px;
-}
-.caja:hover{
-    -webkit-box-shadow: 2px 15px 56px -12px rgba(0,0,0,0.42);
--moz-box-shadow: 2px 15px 56px -12px rgba(0,0,0,0.42);
-box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
-
+.caja:hover {
+    -webkit-box-shadow: 2px 15px 56px -12px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 2px 15px 56px -12px rgba(0, 0, 0, 0.42);
+    box-shadow: 2px 15px 47px -12px rgba(0, 0, 0, 0.42);
     transform: translate(-15px);
-   
 }
 
 .link {
     color: rgb(40, 173, 91);
-} */
+    cursor: pointer;
+}
 
 /* FIN DE ESTILOS DE LAS CINCO CAJAS */
 
 /* INICIO DE ESTILOS DE SECCION DE IMG DE SELECCION COLOMBIA     */
-/* .box-seleccion {
-    height: 400px;
+.box-seleccion {
+    height: 340px;
     width: 100%;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: #F8F8F8;
+}
+
+.texto-seleccion {
+    font-size: 1.8em;
+    color: #525252;
+}
+
+.box-seleccion:hover .texto-seleccion {
+    color: #009A44;
+}
+
+.texto-acompanar-sele {
+    font-size: 1.3em;
+    line-height: 30px;
 }
 
 .img-sele {
     height: 100%;
-    width: 50%;
+    width: 40%;
 }
 
 .img-sele img {
@@ -391,90 +391,148 @@ box-shadow: 2px 15px 47px -12px rgba(0,0,0,0.42);
     width: 100px;
     height: 50px;
     border-radius: 80px 30px;
+    cursor: pointer;
+}
 
-} */
+/* seccion celulares*/
 
-/* secion celulares*/
-/*  .box-final{
-
- }
- .box-gray{
-    margin-top: 150px;
+.box-phones {
+    background-color: #56C271;
     width: 100%;
+    height: 280px;
+    position: relative;
+    top: 200px;
+}
+
+.title-phone {
+    color: white;
+    font-size: 1.7em;
+    width: 340px;
+}
+
+.buttons-descargas {
+    padding-top: 30px;
+    width: 420px;
+    height: 60px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-descargas {
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: #060e09;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-phones {
+    width: 50%;
+}
+
+.img-phones img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 40px;
+}
+
+.img-servientrega {
+    width: 100px;
+    height: 30px;
+    background-color: #009A44;
+}
+
+.img-servientrega img {
+    width: 100%;
+}
+
+.mas-soluciones {
     height: 200px;
-    background-color: green;
- } */
-
-.li-rastrear:hover {
-    cursor: pointer;
-/*     height: 500px;
-    width: 300px; */
-}
-
-
-/* .li-rastrear > ul > li {
-    visibility: visible;
-    max-height: 500px;
-    overflow: visible;
-} */
- .nivel-dos {
-  /*   width: 250px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgb(250,250,250);
-    margin-top: 32px;
-    display: block;
-    padding: 35px;
-    border-radius: 8px;
-    z-index: 30;
+    width: 100%;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-    
+    top: 380px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
-.li-reastrear:hover > .nivel-dos {
-   /*  cursor: pointer;
-    height: auto;
-    overflow: auto;
+
+.txt-mas-soluciones {
+    display: flex;
+    align-items: center;
+    border-left: 2px solid black;
+    height: 200px;
+    font-size: 1.5em;
+    padding-left: 30px;
+}
+
+.box-compras {
     width: 250px;
     display: flex;
+    gap: 20px;
     flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgb(250,250,250);
-    margin-top: 32px;
-    display: block;
-    padding: 35px;
-    border-radius: 8px;
-    z-index: 30;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
-.nivel-dos:hover {
-/*     cursor: pointer;
-    height: auto;
-    overflow: auto;
-    width: 250px;
+
+.noticas-promo {
+    width: 100%;
+    height: 80vh;
+}
+
+.noticas-promociones {
+    width: 100%;
+    height: 80vh;
+
+}
+
+.servientrega-info {
+    width: 100%;
+    height: 62vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    border-bottom: 1px solid black;
+}
+
+.conone-mas {
+    height: 95%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgb(250,250,250);
-    margin-top: 32px;
-    display: block;
-    padding: 35px;
-    border-radius: 8px;
-    z-index: 30;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-top: 1 px solid black;
+    padding-top: 30px;
+    gap: 30px;
 }
-/* .nivel-dos > .sub-item {
-    gap: 0;
-    margin: 0;
-    line-height: 30px;
-}
-.nivel-dos > li:hover {
-    color: rgb(40, 173, 91);
-    cursor: pointer;
-    padding-left: 5px;
-    border-left: 1px solid rgb(40, 173, 91);
-} */
 
+.conone-mas>ul {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    color: #484848;
+}
+
+.conone-mas span {
+    width: 40px;
+    border-bottom: 4px solid #009A44;
+}
+
+.conone-mas ul li:hover {
+    cursor: pointer;
+    color: #009A44;
+}
+
+.caja1 {
+    display: flex;
+    align-items: center;
+}
+
+.numero-nacional {
+    color: #009A44;
+}
+
+.caja1 img {
+    width: 100%;
+}

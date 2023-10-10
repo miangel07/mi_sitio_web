@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbuks</title>
-    <link rel="stylesheet" href="css/starbuks.css">
-    <link rel="stylesheet" href="fontwesome/fontawesome-free-6.4.2-web/css/all.css">
+    <title>Tienda starbucks</title>
+    <link rel="stylesheet" href="estilos/starbucks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="icon/all.css">
 </head>
+
 <body>
     <header>
-        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
         <nav>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
-                <li><a href="#">What's New</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">what's new</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
         </nav>
     </header>
     <div class="main-content">
-        
-        <div  class="img-principal">
-            <img id="img" src="img/verde.png" alt="">
+        <div class="circle main-circle-green" id="mainCircle"></div>
+        <div class="text">
+            <h2>It's not justf coffee <br>
+                It's <span>Starbucks</span> </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus eum enim earum exercitationem
+                hic distinctio aperiam aliquam? Reiciendis ab architecto eligendi ut, nesciunt quaerat quod autem eos
+                inventore dolor at!</p>
+            <div>
+                <a href="#">Learn More</a>
+            </div>
         </div>
-        <div class="product-txt">
-            <h1>it' not justf coffe <br> it's <span>Starbuks</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur neque quia laudantium aspernatur! Velit ad 
-                quaerat optio qui? Aliquam dolores quae optio maiores eius illo esse rerum culpa alias sint.</p>
-                <div class="button-letra"> <a href="#">learn more</a>
+
+        <div class="img-box">
+            <img id="mainImg" src="img/img1.png" class="star" alt="">
         </div>
-       
-        <div class="social-media">
-            <ul>
-          <li><i class="icono facebook fa-brands fa-facebook"></i></li>
-          <li><i class="icono twitter  fa-brands fa-twitter"></i></li>
-          <li><i class="icono instagram  fa-brands fa-instagram"></i></li>
-            </ul>
+
+        <div class="social">
+            <div class="ico">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
         </div>
     </div>
-   
-   
+    <div class="imagenes">
+        <img id="iceGreen" src="img/thumb1.png" onclick="cambiarImg('img/img1.png')" alt="">
+        <img id="iceRose" src="img/thumb2.png" onclick="cambiarImg('img/img2.png')" alt="">
+        <img id="icePink" src="img/thumb3.png" onclick="cambiarImg('img/img3.png')" alt="">
     </div>
-    <div id="mainCircle" class="main-circle main-circle-green"></div> 
-    <div class="box-final">
-        <img id="iceGreen" class="style-img-mini"  src="img/thumb1.png" onclick="imgSlider('verde.pnp')" alt="">
-        <img id="iceRose"  class="style-img-mini"  src="img/thumb2.png" onclick="imgSlider('rosa.png')" alt="">
-        <img id="icePink"  class="style-img-mini"  src="img/thumb3.png" onclick="imgSlider('rosa2.png')" alt="">
-    </div>
-   
-    <script src="script.js/starbucks.js"></script>
+    // hola commit
+    <script src="js/starbukcs.js"></script>
 </body>
+
 </html>
