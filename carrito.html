@@ -8,29 +8,37 @@
     <link rel="stylesheet" href="fontwesome/fontawesome-free-6.4.2-web/css/all.css">
 </head>
 <body>
-    <div class="main-content">
-        <label i class="lbl-subtotal">Subtotal <span id="subTotal">0</span></label>
-        <div class="box-proceder-pago">
-            <label>proceder pago (<span id="cantProductos">0  Producto</span>)</label>
-        </div>
-        <div class="box-productos">
-            <div class="box-img"> <img src="img/react_book.jpg" alt=""></div>
-            <div class="box-info"><h3>the road to REACT</h3><br>
-         
-            <label class="book-descripcion"> your jouerney the master plain yet pragmatic </label>
-            <p class="autor-book">robin wieruch</p>
-            <label class="tipo-tapa">tapa blanda</label>
-            <label class="txt-precio-unidad">COP <span id="precioUnidad" class="precio-unidad">$0</span></label>
-            
-        </div> 
-        </div>
-    </div>
+    <div class="box-img-ipad-mini">
+        <img src="img/ipad-mini.png" class="img-ipad-mini">
+        
+        <div class="main-content">
+            <label i class="lbl-subtotal">Subtotal <span id="subTotal"> 0</span></label>
+            <div class="box-proceder-pago">
+                <label>proceder pago (<span id="cantProductos">0  Producto</span>)</label>
+            </div>
+            <div class="box-productos">
+                <div class="box-img"> <img src="img/react_book.jpg" alt="">
+                    <div class="box-minus-plus">
+                        <div class="box-minus" id="boxMinus"><i class="fa-solid fa-minus"></i></div>
+                        <div class="box-unidades" id="boxUnidades">0</div>
+                        <div class="box-plus" id="boxPlus"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                </div>
 
-    <div class="box-minus-plus">
-        <div class="box-minus" id="boxMinus"><i class="fa-solid fa-minus"></i></div>
-        <div class="box-unidades" id="boxUnidades">0</div>
-        <div class="box-plus" id="boxPlus"><i class="fa-solid fa-plus"></i></div>
+                <div class="box-info"><h3>the road to REACT</h3><br>
+             
+                <label class="book-descripcion"> your jouerney the master plain yet pragmatic </label>
+                <p class="autor-book">robin wieruch</p>
+                <label class="tipo-tapa">tapa blanda</label>
+                <label class="txt-precio-unidad">COP <span id="precioUnidad" class="precio-unidad">$0</span></label>
+                
+            </div> 
+            </div>
+        </div>
+    
+       
     </div>
+   
     <script src="script.js/carrito.js"></script>
 </body>
 </html>

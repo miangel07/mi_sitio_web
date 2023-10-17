@@ -4,9 +4,22 @@
     padding: 0%;
     box-sizing: border-box;
 }
+.box-img-ipad-mini{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.img-ipad-mini{
+    width: 713px;
+}
 .main-content{
-    margin: 10px;
-    font-family: 'Poppins', sans-serif;
+ position: absolute;
+ width: 550px;
+ top: 180px;
+ margin: 20px 20px 0 20px;
+ font-family: 'Poppins', sans-serif;
 }
 .lbl-subtotal{
     font-size: 1.3em;
@@ -24,7 +37,8 @@
     border-radius: 20px;
 }
 .box-info{
-    line-height: 3em;
+    
+    line-height: 2em;
   
     padding: 20px;
     flex-direction: column;
