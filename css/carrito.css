@@ -59,13 +59,20 @@
     flex-direction: row;
     border: 1px solid rgb(48, 48, 48);
     border-radius: 20px;
+    width: 240px;
+    font-size: 1.2em;
+    margin-top: 20px;
 }
 .box-minus{
-border-left: 1px solid rgb(48, 48, 48);
-border-right: 1px solid rgb(48, 48, 48);
+border-top-left-radius:20px ;
+border-bottom-left-radius:20px;
+}
+.box-plus{
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
 }
 .box-minus,.box-unidades,.box-plus{
-    width: 70px;
+    width: 80px;
     height: 50px;
     display: flex;
     justify-content: center;
