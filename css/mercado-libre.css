@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template: "logo      container    hamburguesa  carrito    " /
+                   60px       1fr            40px           40px;
+    width: 100%;
+    background-color: rgb(255, 229, 0);
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.sub-container {
+    display: flex;
+    border-radius: 5px;
+    grid-area: container;
+   justify-content: center;
+   align-items: center;
+}
+
+.input {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.carrito {
+    grid-area: carrito;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburgesa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marca-producto{
+width: 60px;
+background-color: aquamarine;
+height: 50px;
+}
