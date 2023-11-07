@@ -84,9 +84,10 @@ main img{
     overflow: hidden;
     margin: 20px;
     text-align: center;
-    transition: all;
+    transition: all 1s;
 }
 .portafolio .card:hover{
+
     transform: translate(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.4);
 }
@@ -122,6 +123,7 @@ main img{
    transition: 0.2s;
 }
 .card a:hover{
+  
     background-color: #a945c7;
     box-shadow: 0 0 10px #a945c7,0 0 40px #a945c7,
     0 0 80px #a945c7;
