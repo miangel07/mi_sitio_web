@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.box-header {
+  width: 100%;
+  display: grid;
+  grid-template: "logo input carrito hamburguer" / 60px 1fr 40px 40px;
+  background-color: rgb(255, 229, 0);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-logo {
+  grid-area: logo;
+}
+
+.box-logo img {
+  height: 50px;
+}
+
+.box-input-busqueda {
+  grid-area: input;
+}
+
+.input {
+  border: none;
+  width: 90%;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.box-carrito {
+  grid-area: carrito;
+}
+
+.box-hamburguer {
+  grid-area: hamburguer;
+}
+
+/* Estilos se agregan con javascript dinamicamente */
+
+.box-producto {
+  width: 100%;
+  padding: 25px 0;
+  display: grid;
+  grid-template: "box-imagen box-info-producto" / 7fr 10fr;
+  border-bottom: 1px solid rgb(200, 200, 200, 0.5);
+}
+
+.box-imagen {
+  grid-area: box-imagen;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-info-producto {
+  grid-area: box-info-producto;
+}
+
+.marca-producto,
+.modelo-producto {
+  font-size: 0.85em;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.precio-producto {
+  font-size: 1.2em;
+  display: block;
+  font-weight: 500;
+}
+
+.anyo-producto,
+.kilometraje,
+.ciudad {
+  font-size: 0.7em;
+  color: rgb(140, 140, 140);
+  font-size: 0.8em;
+}
+
+/* Fuentes */
+
+@font-face {
+  font-display: swap;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bebas-neue-v9-latin-regular.eot");
+  src: url("../fonts/bebas-neue-v9-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/bebas-neue-v9-latin-regular.woff2") format("woff2"),
+    url("../fonts/bebas-neue-v9-latin-regular.woff") format("woff"),
+    url("../fonts/bebas-neue-v9-latin-regular.ttf") format("truetype"),
+    url("../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue") format("svg");
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
