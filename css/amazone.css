@@ -11,30 +11,11 @@
     border: 1px solid rgb(210,210,210.8);
     
 }
-.porcentaje1{
-    height:35px;
-    background-color:rgb(11, 111, 165);
-    width: 140px;
-}
-.porcentaje2{
+.porcentaje{
     height:35px;
     background-color: rgb(11, 111, 165);
-    width: 100px;
-}
-.porcentaje3{
-    height:35px;
-    background-color: rgb(11, 111, 165);
-    width: 80px;
-}
-.porcentaje4{
-    height:35px;
-    background-color: rgb(11, 111, 165);
-    width: 40px;
-}
-.porcentaje5{
-    height:35px;
-    background-color: rgb(11, 111, 165);
-    width: 20px;
+    width: 0px;
+    transition: all 1s;
 }
 .porcentaje{
     display: flex;
